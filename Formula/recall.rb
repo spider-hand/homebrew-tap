@@ -1,16 +1,16 @@
 class Recall < Formula
   desc "Find commands by describing what you want to do when you forget them"
   homepage "https://github.com/spider-hand/recall"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/spider-hand/recall/releases/download/v1.0.0/recall_darwin_amd64"
-      sha256 "06fad33556575c7995f783ab930be0b0ca5943643be66ea5f629187d9ea57084"
+      url "https://github.com/spider-hand/recall/releases/download/v1.0.1/recall_darwin_amd64"
+      sha256 "83eda4e4bb25aa4ba983b3d67bd78a39ae0d0ca6df7a4e627434b9a0daa63141"
     end
     on_arm do
-      url "https://github.com/spider-hand/recall/releases/download/v1.0.0/recall_darwin_arm64"
-      sha256 "9893d2214ac949b16cee8f6633d8ff5b2a68ad8a9bc9a5aaf38f33a0ea46d9ef"
+      url "https://github.com/spider-hand/recall/releases/download/v1.0.1/recall_darwin_arm64"
+      sha256 "b2e41a59b5a3defbac29857199e46ff364671bc82b73eeb59c723754524c7778"
     end
   end
 
