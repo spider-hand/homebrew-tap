@@ -5,21 +5,21 @@
 class Recall < Formula
   desc "A CLI tool to find commands by describing what you want to do when you forget them"
   homepage "https://github.com/spider-hand/recall"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/spider-hand/recall/releases/download/v1.0.3/recall_1.0.3_darwin_amd64.tar.gz"
-      sha256 "862b346b20c39e96ff5fe6127e67cfb78413303298747bb9a2dc4af5c7d678c5"
+      url "https://github.com/spider-hand/recall/releases/download/v1.0.4/recall_1.0.4_darwin_amd64.tar.gz"
+      sha256 "ebd65db64828d301476dd4e035be10d788eb84a721d6f455a5cc53033d1012fd"
 
       define_method(:install) do
         bin.install "recall"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/spider-hand/recall/releases/download/v1.0.3/recall_1.0.3_darwin_arm64.tar.gz"
-      sha256 "41ecd77652cccd4a7f25df213745d4d859a0c6c48c7111cf4cb2bb82d5e2ef8b"
+      url "https://github.com/spider-hand/recall/releases/download/v1.0.4/recall_1.0.4_darwin_arm64.tar.gz"
+      sha256 "f344d5059840408fafb4605baf108c725fc514a16492b7a756dc7829fa81841e"
 
       define_method(:install) do
         bin.install "recall"
@@ -29,15 +29,15 @@ class Recall < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/spider-hand/recall/releases/download/v1.0.3/recall_1.0.3_linux_amd64.tar.gz"
-      sha256 "592b465fe241c3e7110db8f7a4f7552d6b956b42e3a9ca3609a114f1a49413ed"
+      url "https://github.com/spider-hand/recall/releases/download/v1.0.4/recall_1.0.4_linux_amd64.tar.gz"
+      sha256 "f0a6802f5ceb9bb1f3696501efd0c046cceafa540555406a397325b6d380fb67"
       define_method(:install) do
         bin.install "recall"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/spider-hand/recall/releases/download/v1.0.3/recall_1.0.3_linux_arm64.tar.gz"
-      sha256 "01bf120269641be0fa3f425104d26a17e397060982bd12eb0fd1fa8119046d75"
+      url "https://github.com/spider-hand/recall/releases/download/v1.0.4/recall_1.0.4_linux_arm64.tar.gz"
+      sha256 "c6ff4a54213afa2c721ca1dc99a156b5faba8268eeda261f569f0f982a9925d7"
       define_method(:install) do
         bin.install "recall"
       end
